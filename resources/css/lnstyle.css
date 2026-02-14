@@ -1,0 +1,193 @@
+
+* {
+  font-family: "Markazi Text", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+    background-color: beige;
+    overflow-x: hidden;
+}
+
+/* header */
+
+header {
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0px;
+}
+
+li {
+     display: inline-block;
+}
+
+li a {
+    font-size: 1.3rem;
+    padding: 0px 15px;
+    color: white;
+    border-right: solid 1px white;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: aquamarine;
+}
+
+/* Content */
+
+#main {
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+#main h1 {
+    font-size: 2rem;
+    text-align: center;
+    
+}
+
+.lightnovel {
+    margin-left: 2%;
+    margin-right: 2%;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.lncontent {
+    background-color: lightgray;
+    border: solid 1px black;
+    margin-top: 2%;
+    padding: 1%;
+    border-radius: 15px;
+    width: auto;
+}
+
+.lnimage {
+    float: inline-start;
+    margin-right: 1%;
+}
+
+.lightnovel p {
+    margin-right: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.lightnovel button {
+    background-color: rgb(194, 118, 18);
+    padding: 0 20% ;
+}
+
+.details {
+    vertical-align: middle;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2%;
+}
+
+.lightnovel h2 {
+    font-size: 1rem;
+    margin-right: 100px;
+}
+
+
+/* footer */
+
+footer {
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+footer p {
+    font-size: 0.8rem;
+}
+
+/* MEDIA */
+
+@media only screen and (max-width: 425px) {
+    .mob-details {
+        display: none;
+    }
+  /* Reset and center the wrapper */
+    .lncontent {
+        margin: 2rem 0 !important;
+        padding: 10px 0 0 0 !important; 
+        width: 100%;
+        text-align: center;    
+    }
+
+    /* Center the card/article perfectly */
+    .lightnovel {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        width: 100%;
+        max-width: 320px;                 /* tweak this number if you want bigger/smaller cards */
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border: none !important;          /* remove gray border from card */
+        box-shadow: none !important;
+        outline: none !important;
+        background: transparent;          /* if bg was causing visual border effect */
+    }
+
+    /* Target the image directly – remove border/shadow/outline */
+    .lnimage {
+        display: block;
+        margin: 0 auto 1.2rem auto !important;
+        padding: 0 !important;
+        max-width: 100%;
+        height: auto;
+        border: none !important;          /* ← main fix: remove any gray border */
+        border-radius: 0 !important;      /* if rounded corners looked like border */
+        box-shadow: none !important;
+        outline: none !important;
+        background: none;                 /* remove any bg that might fake a border */
+    }
+
+    /* Center the link area */
+    .details {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+    }
+
+    .link {
+        display: inline-block;
+        margin: 0 auto;
+        padding: 0.8rem 1.6rem;
+        text-align: center;
+        /* If your link has border/background, adjust here if needed */
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    /* Nuclear option: wipe left/right bias from everything inside */
+    .lightnovel *,
+    .lncontent * {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}

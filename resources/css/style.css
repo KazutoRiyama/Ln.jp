@@ -1,0 +1,298 @@
+
+* {
+  font-family: "Markazi Text", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    min-width: 0;
+}
+
+body {
+    background-color: beige;
+    overflow-x: hidden;
+}
+
+/* header */
+
+header {
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0px;
+}
+
+li {
+     display: inline-block;
+}
+
+li a {
+    font-size: 1.3rem;
+    padding: 0px 15px;
+    color: #ffffff;
+    border-right: solid 1px white;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: aquamarine;
+}
+
+/* banner */
+
+#banner {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    justify-content: space-evenly;
+    border-top: solid 1px black;
+    margin-top: 70px;
+    padding-top: 20px;
+    border-bottom: solid 1px black;
+    padding-bottom: 20px;
+    background-color: #d3d3d3;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;   
+}
+
+#banner img {
+    height: auto;
+    width: 100%;
+    transition: all 400ms linear;
+}
+
+#banner img:hover {
+    transform: scale(1.7);
+}
+
+h1 {
+    font-size: 3rem;
+    top: 50px;
+    position: relative;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+/* main content */
+#main-content {
+    margin-top: 10px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+#main-content p {
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+
+.characteristics p {
+    padding-top: 10px;
+}
+
+.characteristics {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 10px;
+}
+
+ span {
+    font-size: 1.3rem;
+    text-decoration: underline;
+}
+
+.characteristics img {
+    width: 15%;
+    height: auto;
+    float: inline-start;
+    margin-right: 20px;
+    margin-top: 10px;
+    position: relative;
+    transition: all 400ms linear;
+}
+
+.characteristics img:hover {
+    transform: scale(1.7);
+}
+
+#bottom-main h2 {
+    color: rgb(68, 46, 46);
+}
+
+.key {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* bottom main */
+
+#bottom-main {
+    margin-top: 10px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+#bottom-main h3 {
+    padding-top: 10px;
+}
+
+#bottom-main p {
+    font-size: 1.3rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #3f3f3f;
+    margin-right: 180px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.popular {
+     border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: #f5f5dc;
+    margin: 1.5rem 0;               /* reasonable vertical spacing */
+    padding: 1.5rem 1.5rem;         /* ← breathing room on ALL sides */
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.popular h2 {
+    text-decoration: none;
+    color: darkblue;
+    margin: 1rem 0;                 /* reset large left margin */
+    padding-left: 0;                /* remove any leftover indent */
+    text-indent: 0;
+    font-size: 1.4rem;              /* ← reduce from implicit large size if needed */
+    line-height: 1.4;
+}
+
+.popular-link {
+    font-size: 1.6rem;              /* ← was 2rem → slightly smaller to help wrapping */
+    color: rgb(1, 129, 22);
+    text-decoration: underline;     /* optional: makes it clearer it's a link */
+}
+
+.popular h2,
+.popular h2 a {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+/* footer */
+
+footer {
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+footer p {
+    font-size: 0.8rem;
+}
+
+
+
+
+@media only screen and (max-width: 1024px) {
+    html, body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    .popular {
+        margin: 1rem 0;
+        padding: 1rem 1.2rem;       /* tighter on smaller screens */
+    }
+
+    .popular h2 {
+        margin: 0.8rem 0;
+        padding-left: 0;
+        font-size: 1.25rem;         /* even smaller on tablets */
+    }
+
+    .popular-link {
+        font-size: 1.4rem;
+    }
+
+    /* Hide images you mentioned (if they exist higher up) */
+    .kimizero-img, .makeinu-img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    html, body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;          /* hides any remaining scrollbar */
+        width: 100%;
+    }
+
+    #bottom-main {
+        margin: 1rem 0;              /* only vertical margin – NO left/right */
+        padding: 0 1rem;             /* safe side breathing room via padding */
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    #bottom-main p {
+        margin: 0.8rem 0;            /* reset huge right margin */
+        margin-right: 0 !important;  /* override the 180px */
+        padding: 0;
+        font-size: 1.1rem;           /* slightly smaller for better mobile reading */
+        line-height: 1.5;
+    }
+
+    #main-content, #bottom-main h2,
+    #bottom-main h3 {
+        margin: 1.2rem 0 0.6rem;
+        padding: 0 0.5rem;
+        font-size: clamp(1.3rem, 5vw, 1.6rem);  /* responsive sizing */
+    }
+
+    /* Ensure long words/Japanese/URLs wrap */
+    #bottom-main p,
+    #bottom-main h3 {
+        word-break: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+    }
+    .illustration-img {
+        display: none;
+    }
+}
