@@ -105,18 +105,11 @@ h1 {
     margin: 0 60px;
 }
 
-.cover-banner {   
-    width: 100%;
-    justify-content: center;
-    text-align: center;
+.cover-banner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-.cover-banner img {
-    width: 15%;
-    height: auto; 
-    display: inline-block;
-    margin: auto 200px;
-}
 
 .cover-text {
     text-align: center;
@@ -129,9 +122,10 @@ h1 {
 }
 
 .difficulty-note {
-    float: inline-end;
+    position: absolute;
     background-color: #f0f325;
     padding: 10px;
+    text-align: center;
 }
 /* Content section */
 
@@ -225,6 +219,10 @@ tfoot td {
     margin: 0 60px;
 }
 
+.japanese-learning p {
+    font-size: 1.5rem;
+}
+
 .button-left,
     .button-right { 
     background-color: rgb(240, 243, 37);  
@@ -273,4 +271,73 @@ footer {
 footer p {
     font-size: 0.8rem;
     color: white;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 768px) {
+    .difficulty-note, .tab {
+        display: none;
+    }
+    #content {
+        margin: 2rem 0 !important;
+        padding: 10px 0 0 0 !important; 
+        width: 100%;
+        text-align: center; 
+    }
+    html {
+    font-size: 100%;          /* = 16px default — good accessibility base */
+}
+
+* {
+    font-family: "Markazi Text", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   /* add this — prevents padding/margin surprises */
+}
+
+body {
+    background-color: beige;
+    overflow-x: hidden;
+    font-size: 1.125rem;      /* ≈18px — comfortable on mobile */
+    line-height: 1.5;
+    color: rgb(41, 41, 41);
+}
+h1 {
+    font-size: clamp(1.8rem, 5vw + 1rem, 3rem);  /* min 28.8px → preferred ~vw scaled → max 48px */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+}
+
+h2 {
+    font-size: clamp(1.6rem, 4vw + 0.8rem, 2.5rem);
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: clamp(1.1rem, 3vw + 0.5rem, 1.5rem);
+    font-style: italic;
+}
+
+p, .synopsis p, .review p, .japanese-learning p {
+    font-size: clamp(1rem, 2.5vw + 0.5rem, 1.5rem);  /* 16px min → scales up */
+}
+
+.genre {
+    font-size: clamp(1rem, 2vw + 0.4rem, 1.3rem);
+}
+.banner,
+.content,
+.japanese-learning {
+    margin: 0 1rem;                /* small on mobile */
+    padding: 0 1rem;
+}
+.cover-banner {
+    margin-top: 60px;
+}
 }
