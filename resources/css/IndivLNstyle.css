@@ -108,6 +108,7 @@ h1 {
 .cover-banner {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-items: center;
 }
 
 
@@ -123,7 +124,7 @@ h1 {
 
 .difficulty-note {
     position: absolute;
-    background-color: #f0f325;
+    background-color: #ffffbc;
     padding: 10px;
     text-align: center;
 }
@@ -274,7 +275,11 @@ footer p {
 }
 
 /* responsive */
-
+@media only screen and (max-width: 1024px) {
+    .difficulty-note {
+        display: none;
+    }
+}
 @media only screen and (max-width: 768px) {
     .difficulty-note, .tab {
         display: none;
