@@ -143,6 +143,15 @@ h2 {
     text-decoration: underline;
 }
 
+.italic {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+u {
+    font-size: 1.5rem;
+}
+
 .synopsis p {
     font-size: 1.5rem;
 }

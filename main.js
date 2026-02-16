@@ -31,7 +31,7 @@ const context = {
         JPtitle: '負けヒロインが多すぎる！',
         roumaji: '(Make hiroin ga oosugiru!)',
         synopsis: `"Huh? Who's a losing heroine ?"    I, Nukumizu Kazuhiko am a mob character in class.
-        One day I witnessed Yanami Anna, a popular girl, getting rejected ny a boy. "He said he would make me his wife, 
+        One day I witnessed Yanami Anna, a popular girl, getting rejected by a boy. "He said he would make me his wife, 
         isn't that heartless?" "That, how old were you when it happened?" "4 or 5 years old."
         That doesn't count. This leads to the emergence of a group of girls who feel defeated, Yakishio Lemon from
         the track and field club and Komari Chika from the literature club..? "Nukumizu-kun, girls are divided into two types: 
