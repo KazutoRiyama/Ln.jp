@@ -8,6 +8,10 @@
   padding: 0;
 }
 
+body, html {
+  scroll-padding-top: 55px; /* adjust the pixel amount here for your top navigation bar height */
+}
+
 body {
     background-color: beige;
     overflow-x: hidden;
@@ -15,14 +19,37 @@ body {
 
 p {
     color: rgb(41, 41, 41);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
 }
 
 h1 {
     font-size: 2.5rem;
     text-align: center;
+    border-bottom: 1px solid black;
+    margin: 10px 0;
 }
 
+h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
 
+h3 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+img {
+    margin-bottom: 10px;
+}
+
+em {
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
 
 /* header */
 
@@ -45,7 +72,7 @@ li {
      display: inline-block;
 }
 
-li a {
+header li a {
     font-size: 1.3rem;
     padding: 0px 15px;
     color: white;
@@ -81,10 +108,30 @@ nav li {
     text-align: center;
 }
 
+nav li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.603);
+}
+
+nav li a:hover {
+    color: darkmagenta;
+}
+
+.nav-title {
+    text-decoration: underline;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.nav-title:hover {
+    color: darkgreen;
+}
+
 .content {
   width: 90%;
   height: 100%;
-  margin-left: 10%;
+  margin-left: 15%;
+  margin-right: 5%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -105,3 +152,18 @@ footer p {
     font-size: 0.8rem;
     color: white;
 }
+
+/* TEST */
+
+.parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.left {
+    margin: 0;
+}
+
+

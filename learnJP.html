@@ -26,22 +26,142 @@
      
 
     <section id="main">
+
+        <!-- nav bar -->
+
         <nav>
-            <ol>
-                <li>test</li>
-                <li>test2</li>
-                <li>tes3</li>
-            </ol>
-        </nav>
+            <li><a  class="nav-title"href="#kana">Kana</a></li>
+            <li><a href="#hiragana">Hiragana</a></li>
+            <li><a href="#katakana">Katakana</a></li>
+            <li><a class="nav-title" href="#anki">Anki</a></li>
+            <li><a href="#anki-setup">Setup</a></li>
+            <li><a href="#decks">Decks</a></li>
+         </nav>
+
+
 
         <div class="content">
     <h1>Learning how to read japanese</h1>
-
             <div class="intro">
-                <h2>Kana</h2>
+                <h2 id="kana">Kana</h2>
+   
+                <div class="intro-text-container">
+                    <p>
+                        The most important first step in learning Japanese is to memorize 
+                        hiragana and katakana by heart.
+                        (Quick note: I've chosen not to add an “s” to Japanese words like hiragana and katakana.)
+                        Once you know them, in theory you can read everything written in Japanese — at least on a phonetic level. 
+                        (More details about this later.)There are also many common combinations of kana (like small ゃ/ゅ/ょ, っ, or ん followed
+                        by certain sounds), but they're quite intuitive. You don't really need to memorize them separately — you'll pick them 
+                        up naturally just by reading.
+                    </p>
                 
+                    <h3 id="hiragana">Hiragana:</h3>
+                    <img src="resources/images/hiragana.png">
+
+                    <h3 id="katakana">Katakana:</h3>
+                    <img src="resources/images/katakana.png">
+                    <p> Now you can read anything you want in Japanese!<br>This is thanks to <em>furigana</em> (also known as ruby text or yomigana), 
+                        which consists of small kana (usually hiragana) printed above or beside kanji to show their pronunciation. 
+                        It serves as a reading aid, especially helpful for children, language learners, and anyone unfamiliar with certain 
+                        kanji.<br>Furigana is commonly used over every kanji in children's books. As the material becomes more advanced (aimed at 
+                        older children or adults), fewer and fewer kanji get furigana. <br>But don't worry — this won't be a problem when reading on 
+                        a computer. Many digital tools and apps can help display dictionnary for example to
+                        look up unknown kanji instantly. (We'll cover how to use <em>Yomitan</em> — a simple, extremely helpful browser extension/tool — in more detail later.)
+                        <br>Alternatively, when you encounter an unfamiliar kanji, you 
+                        can simply check a dictionary. Japanese dictionaries typically list the kanji along with its furigana (hiragana reading) 
+                        right next to it — and usually without <em>roumaji</em> (our Latin alphabet: a, b, c, etc.).
+                    </p>
+                </div>
             </div>
+
+            <div id="anki" class="Anki-container">
+                <h2>Anki</h2>
+                <h3>What's Anki ?</h3>
+                <p>
+                    Anki is a free, powerful, and widely used flashcard program (also called a spaced repetition system or SRS app) designed
+                    to help you memorize and retain information long-term with minimal effort. It works by combining two key evidence-based 
+                    techniques from cognitive science:<br>
+                    - <em>Active recall</em>— instead of passively re-reading notes, you actively try to remember the answer before flipping the card 
+                    (this strengthens memory far better than highlighting or re-reading).<br>
+                    - <em>paced repetition</em> — the app uses a smart algorithm to schedule reviews at increasing intervals. Cards you find easy are 
+                    shown less often (maybe weeks or months later), while difficult ones come back sooner — exactly when you're about to forget 
+                    them. This fights the natural forgetting curve very efficiently.
+                </p>
+
+                <h3>Why is Anki especially popular for learning japanese?</h3>
+                <p>
+                    It's one of the most effective tools for mastering:<br>- <em>Hiragana</em> and <em>katakana</em> (quick recognition drills)<br>
+                    - <em>Kanji</em> (meanings, readings, stroke order, compounds)
+                    <br>- <em>Vocabulary</em> (words in context, with audio/images if you want)
+                    <br>- <em>Grammar</em> points and example sentences <br>
+                    Huge communities share ready-made "decks" (sets of flashcards), like Core 2k/6k vocab, RTK (Remembering the Kanji), 
+                    Tango N5-N1 series, or anime-sentence decks. You can download them for free from AnkiWeb and start immediately, or 
+                    customize your own.
+                </p>
+
+                <div id="anki-setup">
+                    <h3>How to install and setup Anki</h3>
+                    <p>Start by downloading Anki by clicking on the official website by clicking on this 
+                        <a href="https://apps.ankiweb.net/">link</a>.
+                    </p>
+                    <div class="parent">
+                        <div class="left">
+                        <img src="resources/images/ankihome.png">
+                        </div>
+                        <div class="right">
+                        <p>
+                            This should looks like this on PC once installed. Without the numerous decks I already have installed. <br><br>
+                        </p>
+                        </div>
+                    </div>
+                    <p>
+                        Now, before we dive into the Anki application itself, let's start with the basics: how to add pre-made decks 
+                        (especially shared ones from AnkiWeb) and later how to create your own decks from scratch.
+                    </p>
+
+                    <h3 id="decks">Adding existing decks</h3>
+                    <p>
+                        There are numerous pre-made decks available on <em>AnkiWeb</em> and elsewhere, so which one should you start with?
+                        I recommend beginning with the one I personally started with (and many others swear by in 2026): <em>Kaishi 1.5k</em>
+                         — a modern, highly regarded vocabulary deck designed specifically for beginners.
+                    </p>
+
+                    <div class="parent">
+                        <div class="left">
+                            <img src="resources/images/kaishi1.5illustration1.png">
+                        </div>
+                        <div class="right">
+                            <p>
+                               Here's how the deck presents cards (before you reveal the answer):<br>
+                                -  The <em>kanji</em> without <em>furigana</em>.<br>
+                                -  A sentence including the <em>kanji</em> without <em>furigana</em>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="parent">
+                        <div class="left">
+                            <img src="resources/images/kaishi1.5illustration.png">
+                        </div>
+                        <div class="right">
+                            <p>
+                                Here's how the deck presents cards (after you reveal the answer):<br>
+                                -  The <em>kanji</em> with <em>furigana</em>.<br>
+                                - One of the possible translations (the deck often keeps only the most common or 
+                                primary meaning, even though many Japanese words have multiple nuances or uses).<br>
+                                - The sentence including the <em>kanji</em> with <em>furigana</em>. <br>
+                                - The sentence translation. <br>
+                                - An audio including the <em>kanji</em> pronunciation and the sentence pronunciation.<br>
+                                - An illustration
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
+        
     </section>
  
     
