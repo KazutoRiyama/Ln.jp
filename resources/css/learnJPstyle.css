@@ -59,6 +59,10 @@ em {
     font-weight: bolder;
 }
 
+a { 
+    font-size: 1.2rem;
+}
+
 /* header */
 
 header {
@@ -142,7 +146,7 @@ nav li a:hover {
   margin-right: 5%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: ;
 }
 
 /* footer */
@@ -181,4 +185,12 @@ footer p {
 
 u {
     font-size: 1.2rem;
+}
+
+.left img {
+    width: 100%;
+}
+
+.right {
+    margin-left: 40px;
 }
