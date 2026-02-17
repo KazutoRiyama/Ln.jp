@@ -30,12 +30,14 @@
         <!-- nav bar -->
 
         <nav>
+            <li class="nav-bar-title">Navigation</li>
             <li><a  class="nav-title"href="#kana">Kana</a></li>
             <li><a href="#hiragana">Hiragana</a></li>
             <li><a href="#katakana">Katakana</a></li>
             <li><a class="nav-title" href="#anki">Anki</a></li>
             <li><a href="#anki-setup">Setup</a></li>
-            <li><a href="#decks">Decks</a></li>
+            <li><a href="#anki-presentation">Presentation</a></li>
+            <li><a href="#decks">Adding decks</a></li>
          </nav>
 
 
@@ -120,7 +122,7 @@
                         (especially shared ones from AnkiWeb) and later how to create your own decks from scratch.
                     </p>
 
-                    <h3 id="decks">Adding existing decks</h3>
+                    <h3 id="anki-presentation">How it works</h3>
                     <p>
                         There are numerous pre-made decks available on <em>AnkiWeb</em> and elsewhere, so which one should you start with?
                         I recommend beginning with the one I personally started with (and many others swear by in 2026): <em>Kaishi 1.5k</em>
@@ -129,6 +131,7 @@
 
                     <div class="parent">
                         <div class="left">
+                            <p>Here's how the deck presents cards (before you reveal the answer):</p>
                             <img src="resources/images/kaishi1.5illustration1.png">
                         </div>
                         <div class="right">
@@ -142,11 +145,12 @@
 
                     <div class="parent">
                         <div class="left">
+                             <p>Here's how the deck presents cards (after you reveal the answer):</p>
                             <img src="resources/images/kaishi1.5illustration.png">
                         </div>
                         <div class="right">
                             <p>
-                                Here's how the deck presents cards (after you reveal the answer):<br>
+                               <br>
                                 -  The <em>kanji</em> with <em>furigana</em>.<br>
                                 - One of the possible translations (the deck often keeps only the most common or 
                                 primary meaning, even though many Japanese words have multiple nuances or uses).<br>
@@ -157,7 +161,63 @@
                             </p>
                         </div>
                     </div>
+                    <p>
+                        There are 4 buttons at the bottom, but basically only 2 are useful:<br><br>
+                        - <em>Again</em>: <u>useful</u>.<br>
+                        Press this button when you don't know (or are unsure of) the answer. <br>
+                        It will show you the card again in under 1 minute (by default), giving you a quick chance 
+                        to try again right away.For new cards, you'll typically need to guess correctly twice in a
+                         row (on first appearance) before the card moves out of the "learning" phase and into 
+                         the longer spaced-repetition intervals.<br><br>
+                         - <em>Hard</em>: <u>Basically useless</u>.<br>
+                        This button has the same basic function as the "Again" button. <br>it tells Anki that you didn't know the 
+                        answer well enough — but instead of showing the card again in under 1 minute, it schedules the card 
+                        to reappear the next day.In other words:  Pressing Hard (on a new card in the learning phase) delays 
+                        the next review until tomorrow, rather than forcing an immediate retry refraining your learning process.<br><br>
+                        - <em>Good</em>: <u>Useful</u>.<br>
+                        Usually moves the card forward to 10 minutes later (on first appearance), then longer if you 
+                        keep getting it right the next days.<br><br>
+                        - <em>Easy</em>: <u>Rarely useful</u>.<br>
+                        Skips some early steps and jumps the card straight to longer spaced intervals. Useful when you 
+                        start a new deck and already know the kanji.
+                    </p>
+
+                    <h3 id="decks">Adding existing decks</h3>
+                    <p>Here's a clear, step-by-step guide on how to add a deck to Anki (focusing on the most common case: adding a 
+                        shared/pre-made deck from AnkiWeb, like Kaishi 1.5k or any other popular one). This works the same in 2026 
+                        as in recent versions — Anki hasn't changed the core process much.
+
+                    </p>
+                    <h4>Step 1: Find and Download the Deck</h4>
+                    <p>1. Open your web browser (on computer, phone, or tablet) and go to:
+                        <a href="https://ankiweb.net/shared/decks/" target="_blank">https://ankiweb.net/shared/decks/</a><br>
+                        2. Search for the deck you want (e.g., type "Kaishi 1.5k" or "Japanese vocabulary").<br>
+                        3. When you find it, click the Download button.  This downloads a file ending in .apkg (Anki Package) 
+                        — usually to your Downloads folder.<br><br>
+                        <em>Important note</em>: You cannot add shared decks directly through the AnkiWeb website online account. You must
+                         import the .apkg file into the Anki app first (desktop, Android, or iOS), then sync if you want
+                          it on other devices.
+                    </p>
+                    <h4>Step 2: Import the Deck into Anki</h4>
+                    <p>
+                        Choose your platform — desktop is easiest for beginners and first-time setup.<br>
+                        <em>On computer</em> - recommended.<br>
+                        1. Download and install Anki (naviguate to setup if not already done).<br>
+                        2. Find the downloaded .apkg file in your Downloads folder and double-click it.
+                        Anki should automatically open and start the import.<br>
+                        3. Anki may show a quick confirmation dialog (e.g., about note types or scheduling) — 
+                        usually just click Import or accept defaults.<br>
+                        4. Done! The new deck(s) will appear in your main Decks screen.
+                    </p>
+                    <h4>Step 3: Sync accross devices (optionnal but recommended)</h4>
+                    <p>
+                        1. In Anki (any platform), click the Sync button (cloud icon, usually top right; or press Y on desktop).<br>
+                        2. Log in with your free AnkiWeb account if prompted (create one at ankiweb.net if you don't have it).<br>
+                        3. Choose Upload if this is your first sync (sends decks to the cloud), or Download if pulling from elsewhere.<br>
+                        4. Now the deck is available on all your devices after syncing!
+                    </p>
                 </div>
+
             </div>
 
         </div>
